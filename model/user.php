@@ -17,6 +17,6 @@ class User
     {
         $query = "SELECT * FROM user WHERE username='$user->username' and password='$user->password'";
 
-        return $conn->query($query); //vraca result set
+        return $conn->query($query); //vraca result set (broj redova koji su se izvrsili)
     }
 }
