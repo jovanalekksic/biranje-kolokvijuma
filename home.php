@@ -45,25 +45,23 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php
-                    while ($red = $result->fetch_array()) {
-                    ?>
-                        <tr>
-                            <td><?php echo $red["predmet"] ?></td>
-                            <td><?php echo $red["katedra"] ?></td>
-                            <td><?php echo $red["sala"] ?></td>
-                            <td><?php echo $red["datum"] ?></td>
-                            <td>
-                                <label class="custom-radio-btn">
-                                    <input type="radio" name="checked-donut" value=<?php echo $red["id"] ?>>
-                                    <span class="checkmark"></span>
-                                </label>
-                            </td>
 
-                        </tr>
-                    <?php
+                    <tr>
+                        <td><?php echo $red["predmet"] ?></td>
+                        <td><?php echo $red["katedra"] ?></td>
+                        <td><?php echo $red["sala"] ?></td>
+                        <td><?php echo $red["datum"] ?></td>
+                        <td>
+                            <label class="custom-radio-btn">
+                                <input type="radio" name="checked-donut" value=<?php echo $red["id"] ?>>
+                                <span class="checkmark"></span>
+                            </label>
+                        </td>
+
+                    </tr>
+
                     }
-                    ?>
+
                 </tbody>
             </table>
             <div class="row">
@@ -76,7 +74,7 @@
                     <button id="btn-obrisi" class="btn btn-danger" style="background-color: red; border: 1px solid white;">Obrisi</button>
                 </div>
 
-                <div class="col-md-2" style="text-align: right>; color:">
+                <div class="col-md-2" style="text-align: right; ">
                     <button id="btn-sortiraj" class="btn btn-normal" onclick="sortTable()">Sortiraj</button>
                 </div>
 
@@ -187,6 +185,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+
 
 
 
